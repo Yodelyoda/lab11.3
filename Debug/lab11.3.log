@@ -1,0 +1,11 @@
+﻿  lab11.3.cpp
+C:\Users\Yoda\source\repos\lab11.3\lab11.3.cpp(39): warning C4101: 'N': unreferenced local variable
+C:\Users\Yoda\source\repos\lab11.3\lab11.3.cpp(126): warning C4244: '=': conversion from 'double' to 'int', possible loss of data
+C:\Users\Yoda\source\repos\lab11.3\lab11.3.cpp(133): warning C4244: '=': conversion from 'double' to 'int', possible loss of data
+C:\Users\Yoda\source\repos\lab11.3\lab11.3.cpp(140): warning C4244: '=': conversion from 'double' to 'int', possible loss of data
+C:\Users\Yoda\source\repos\lab11.3\lab11.3.cpp(147): warning C4244: '=': conversion from 'double' to 'int', possible loss of data
+C:\Users\Yoda\source\repos\lab11.3\lab11.3.cpp(154): warning C4244: '=': conversion from 'double' to 'int', possible loss of data
+C:\Users\Yoda\source\repos\lab11.3\lab11.3.cpp(219): warning C4244: 'initializing': conversion from 'std::streamoff' to 'int', possible loss of data
+C:\Users\Yoda\source\repos\lab11.3\lab11.3.cpp(261): warning C4244: 'initializing': conversion from 'std::streamoff' to 'int', possible loss of data
+C:\Users\Yoda\source\repos\lab11.3\lab11.3.cpp(319): warning C4244: 'initializing': conversion from 'std::streamoff' to 'int', possible loss of data
+  lab11.3.vcxproj -> C:\Users\Yoda\source\repos\lab11.3\Debug\lab11.3.exe
