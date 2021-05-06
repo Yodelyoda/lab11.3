@@ -9,10 +9,10 @@
 #include <Windows.h> // забезпечення відображення кирилиці
 using namespace std;
 enum Spec { KOMPNAUK, INFORMAT, TRUDOVIK, FIZIK, MATEM };
-string specStr[] = { "«Комп’ютерні науки»", "«Інформатика»", "«Математика та економіка»","«Фізика та інформатика»","«Трудове навчання»" };
+const char* specStr[] = { "«Комп’ютерні науки»", "«Інформатика»", "«Математика та економіка»","«Фізика та інформатика»","«Трудове навчання»" };
 struct Student
 {
-	string prizv;
+	char prizv[100];
 	unsigned kurs;
 	unsigned nomer;
 	Spec spec;
@@ -227,8 +227,7 @@ void Sort(char* fname)
 	{
 		for (int j = size - 1; j > i; j++)
 		{
-			string priszOne = student[j].prizv;
-			string priszTwo = student[j-1].prizv;
+			
 			if ((student[j].SERrate < student[j - 1].SERrate)
 				||
 				(student[j].SERrate == student[j - 1].SERrate &&
@@ -268,8 +267,6 @@ void IndexSort(char* fname)
 	{
 		for (int j = size - 1; j > i; j--)
 		{
-			string priszOne = student[j].prizv;
-			string priszTwo = student[j - 1].prizv;
 			if ((student[j].SERrate < student[j - 1].SERrate)
 				||
 				(student[j].SERrate == student[j - 1].SERrate &&
@@ -306,7 +303,7 @@ int BinSearch(char* fname)
 	}
 	Spec spec;
 	int ispec, avar,trate;
-	string prizv;
+	char prizv[100];
 	cout << "Введіть ключі пошуку:" << endl;
 	cout << "Спеціальність (0 - Комп’ютерні науки, 1 - Інформатика, 2 - Математика та економіка, 3 - Фізика та інформатика, 4 -Трудове навчання ): ";
 	cin >> ispec;
